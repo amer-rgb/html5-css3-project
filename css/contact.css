@@ -1,0 +1,82 @@
+
+.contact-title { 
+    font-size: 3rem;
+    letter-spacing: .2rem;
+    font-weight: 500; 
+}
+.contact { 
+    background:linear-gradient(to right,rgba(0,0,0,.1),rgba(0,0,0,.7)),
+    url(../image/contacts/charlotte-karlsen-768256-unsplash_2048x2048.jpg);
+    background-attachment: fixed;
+     }
+.contact-title{ text-transform: uppercase;}
+.contact-list{list-style: none; padding: 0; }
+.contact-list li { 
+    display: inline-block;
+    color: whitesmoke;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-family: var(--second-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative;
+}
+.contact-list li a{text-decoration: none;color: whitesmoke; transition: color .3s;}
+.contact-list li a:hover{color:var(--main-color)}
+.contact-list-sec{margin-left: 15px;}
+.contact-list-sec::before{
+    content: "";
+    width: 8px;
+    height: 8px;
+    top: 7px;
+    left: -15px;
+    border-radius: 50%;
+    background-color:whitesmoke;
+    position: absolute;
+}
+/* contact-methods */
+.contact-methods-item{text-align: center;}
+.contact-md-i{color: var(--main-color); margin-bottom: 30px;}
+.contact-methodstitle{
+    text-transform: uppercase;
+    color: #444;
+    transition: color .3s;
+    letter-spacing: 1.5px;
+}
+.contact-methodstitle:hover{ cursor: pointer; color: var(--main-color);}
+.contact-methods-desc{color: var(--gray);font-family: var(--second-font);}
+
+/* Get in-touch */
+.GI-touch{ background: rgb(240, 239, 239);}
+.contact-form{ width: 50%; margin: auto;}
+.GI-touch-header { color: rgb(19, 13, 37); font-size: 2rem !important}
+.contact-form input,textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    font-family: var(--second-font);
+    font-size: 1rem;
+    color: var(--gray);
+    border: 1px solid rgb(211, 211, 211);
+    transition: background .4s linear;
+}
+.contact-form input:focus ,textarea:focus { background: rgb(150, 150, 150);color:var(--white-color) ;border: none;} 
+textarea{resize: vertical;}
+.contact-btn{ 
+    font-family: var(--second-font) !important;
+    font-size: .9rem;
+    text-transform: uppercase;
+    padding: 12px 100px !important;
+    letter-spacing: 1px;
+    margin: auto; 
+    display: block;
+    transition: border-radius .4s linear , background .4s linear !important;
+    border: 0;
+}
+.contact-btn a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+.contact-btn:hover{ background: rgb(8, 10, 31) !important; border-radius:25%}
+.contact-btn:focus{border: none;}
